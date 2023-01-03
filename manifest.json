@@ -1,0 +1,22 @@
+{
+  "name": "Spoof Chrome for Google Search",
+  "description": "Makes Edge spoof Chrome when accessing Google Search URLs. This may reduce Google showing the CAPCHA page.",
+  "manifest_version": 2,
+  "version": "1.0",
+  "author": "jason@standbacklabs.org",
+  "homepage_url": "https://standbacklabs.org",
+  "permissions": [
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "icons": {
+    "16": "/images/chromedge16.png",
+    "32": "/images/chromedge32.png",
+    "48": "/images/chromedge48.png",
+    "128": "/images/chromedge128.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
