@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "priority": 10,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        { "header": "Sec-CH-UA", "operation": "set", "value": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"" },
+        { "header": "Sec-CH-UA-Full-Version", "operation": "set", "value": "108.0.5359.125" },
+        { "header": "Sec-CH-UA-Full-Version-List", "operation": "set", "value": "\"Not?A_Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"108.0.5359.125\", \"Google Chrome\";v=\"108.0.5359.125\"" },
+        { "header": "User-Agent", "operation": "set", "value": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/108.0.0.0 Safari\/537.36" }
+      ]
+    },
+    "condition": {
+      "isUrlFilterCaseSensitive": false,
+      "regexFilter": "^https?:\\\/\\\/[a-z0-9\\-\\.]*((google|gstatic|googleusercontent|ytimg|youtube|googleapis)(\\.[a-z0-9\\-]+(\\.[a-z]{2})?))(\\\/.*)?$",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "image",
+        "font",
+        "object",
+        "xmlhttprequest",
+        "ping",
+        "csp_report",
+        "media",
+        "websocket",
+        "webtransport",
+        "webbundle",
+        "other" 
+      ]
+    }
+  }
+]
